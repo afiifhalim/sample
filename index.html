@@ -2,13 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>layout v3.0</title>
-</head>
 <style type="text/css">
-
 *	{
 	margin: 0;
-	width:auto;
+	width:100%;
 	font-family:Tahoma, Geneva, sans-serif;
 }
 
@@ -17,165 +14,88 @@ body	{
 }
 
 .header	{
-	background-color:rgba(51,255,255,1);
-	border: solid thick White;
-	border-radius:50px;
-	width: 400px;
-	padding:10px;
-	margin: 20px;
-}
-
-.contacts	{
-	background-color:rgba(0,204,255,1);
-	height: auto;
-	width:450px;
-	border: solid thick White;
-	border-radius: 50px;
-	padding: 10px;
+	background:rgba(255,255,153,1);
+	width: 500px;
 	margin:10px;
-	display:inline-block;
-}
-
-.content	{
-	border-radius: 30px;
-	border:	3px White solid;
-	margin: 5px;
-	margin-top:20px;
-	padding:10px;
-	height: auto;
-	width:600px;
-	display:inline-block;
-}
-
-.left-col	{
-	border: solid thick White;
-	border-radius: 20px;
-	height:auto;
-	width:250px;
-	background-color: rgba(102,255,204,1);
-	padding:15px;
-	display:inline-block;
-	margin: 10px;
-	float:left;
-}
-
-.bottom-left-col	{
-	border: solid thick White;
-	border-radius: 20px;
-	height:auto;
-	width:250px;
-	float:left;
-	background-color: rgba(255,153,255,1);
-	padding:15px;
-	display:inline-block;
-	margin: 10px;
-}
-
-.right-col	{
-	display:inline-block;
+	padding:0px;
 	border: thick solid White;
-	background-color:rgba(204,153,255,1);
-	border-radius: 20px;
-	height: auto;
-	width:200px;
-	padding:20px;
-	margin:10px;
-	float:right;
+	border-radius:100px;
 }
+
+#info	{
+	color:rgba(255,255,255,1);
+	text-shadow: 2px 2px DarkSlateGrey;
+}
+
+#person	{
+	text-shadow: 3px 3px White;
+}
+
+.body, .address	{
+	width:300px;
+	margin:20px;
+	padding:20px;
+	border: thick solid White;
+	border-radius:100px;
+	background-color:rgba(255,204,153,1);
+	height: auto;
+}
+
+.body p, .address p	{
+	font-weight: bold;
+	color: Black;
+	text-shadow: 2px 2px White;
+}
+
+.address	{
+	background-color:rgba(255,153,153,1);
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	margin:0px;
+	border-radius: 50px;
+	background-color: rgba(102,255,255,1);
+	font-weight:bold;
+	text-shadow: 1px 1px White;
+}
+
 
 </style>
+
+<title>Personal Info</title>
+</head>
 
 <body>
 
 <div align="center">
 <div class="header">
 <div class="header-text" align="center">
-<h1>Afiif Halim</h1><h2>Curriculum Vitae</h2></div>
+<h1 id="person">my personal</h1><h2 id="info">information</h2></div>
 </div>
 </div>
 
 <div align="center">
-<div class="contacts">
-<div align="center">
-<h2>phone : +60172757234</h2></div>
-</div>
-</div>
+<div class="body">
+<div class="body-text" align="center">
+<p align="center">NAME	:	MOHD AFIIF BIN ABD HALIM</p>
+<p>NATIONALITY	:	MALAYSIAN</p>
+<p>AGE	:	30 YEARS OLD</p>
+<p>
+</div></div></div>
 
 <div align="center">
-<div class="contacts">
+<div class="address">
+<div class="body-text" align="center">
+    <p>ADDRESS	:</p>LOT 179, MUKIM 3, KG. PELET, 14400, BUKIT MERTAJAM, PENANG.
+<p>
+</div></div></div>
+
 <div align="center">
-<h2>email: afiifhalim@yahoo.com</h2></div>
-</div>
-</div>
-
-
-<div align="center">
-<div class="content">
-<div class="left-col">
-<div id="education" align="left"><h3>EDUCATION</h3><br />
-
-<h4>Open University Malaysia</h4>
-<p>BS Multimedia Communication</p>
-<p>May 2014 - December 2017</p><br />
-<h4>Universiti Teknologi Mara</h4>
-<p>Pre-Science</p>
-<p>May 2012 - December 2013</p>
-</div>
-<br />
-
-</div>
-
-<div class="right-col">
-<div id="experience" align="left">
-<h3>EXPERIENCE</h3><br />
-
-<h4>Puncak Mutiara Kristal SDN BHD</h4>
-<p>Agrotourism</p>
-<p>Admin Manager</p>
-<p>Sept 2014 - Present</p>
-<li>design logos, graphics, banners, and promotional materials.</li>
-<li>manage cross platform social media, and company website.</li>
-<li>troubleshoot computer problems.</li><br />
-
-<h4>MK Corporation S/B</h4>
-<p>Livestocks</p>
-<p>Sales Executive</p>
-<p>June 2012 - July 2014</p>
-<li>conduct sales.</li>
-<li>assist farm manager in daily operations.</li>
-<li>troubleshoot computer hardware and software problems.</li><br />
-
-</div>
-</div>
-
-<div class="bottom-left-col" align="left">
-<h3>SKILLS</h3>
-<br />
-<h4>Technical Skills</h4>
-<p>Windows + Linux proficiency</p>
-<p>Adobe Creative Suites</p>
-<p>Microsoft Office</p>
-<p>Photography</p>
-<p>Bootstrap</p>
-<p>HTML</p>
-<p>CSS</p>
-<p>PHP</p>
-<br />
-
-
-
-<h4 align="left">Personal Skills</h4>
-<p>Problem solving</p>
-<p>Sprint planning</p>
-<p>Budget scoping</p>
-<p>Hardworking</p>
-<p>Influential</p>
-<p>Friendly</p>
-<p>Efficient</p><br />
-
-</div>
-</div>
-</div>
+<div class="proceed">
+<form action="CV.html"><button type="button">Proceed to CV</button></form>
+</div></div>
 
 </body>
 </html>
